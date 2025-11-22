@@ -1,35 +1,51 @@
 *{
-    border: 1px red solid;
+    /* border: 1px red solid; */
     box-sizing: border-box;
     font-family: monospace;
     text-transform: uppercase;
 }
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d1b2a;
 }
 main{
     display: grid;
-    grid-template-rows: repeat(5,100px);
+    grid-template-rows: repeat(5,125px);
     .row{
         display: grid;
-        grid-template-columns: repeat(5,100px);
+        grid-template-columns: repeat(5,125px);
     }
     .cell{
+        border-radius: 15px;
+        border: 10px #1b263b solid;
+        box-shadow: 4px -4px 0px #415a77 inset;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 64px;
+        font-size: 128px;
         input{
+            color:#e0e1dd;
             font-size: 64px;
             width: 100%;
             height: 100%;
             border: none;
             text-align: center;
+            background: none;
         }
         input:focus{
             outline: none;
         }
         
     }
+}
+
+
+.knopka{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    color: red;
+    font-size: 72px;
 }
